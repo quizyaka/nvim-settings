@@ -3,6 +3,12 @@ return {
     version = "*",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     event = "VeryLazy",
+    opts = {
+        highlights = {
+            fill = { bg = "NONE" },
+            background = { bg = "NONE" },
+        },
+    },
     config = function()
         require("bufferline").setup({
             options = {
