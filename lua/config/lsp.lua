@@ -44,7 +44,6 @@ lspconfig.emmet_language_server.setup({
         "vue", "php", "blade"
     },
     init_options = {
-        --- включаем расширения
         html = {
             options = {
                 ["bem.enabled"] = true,
