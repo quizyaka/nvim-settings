@@ -23,12 +23,14 @@ return {
             },
             window = {
                 mappings = {
-                    -- ["<space>"] = "toggle_node",
+                    ["<leader>]"] = "set_root",
+                    ["<leader>["] = "navigate_up",
                     ["<cr>"] = "open",
                     ["s"] = "open_split",
                     ["v"] = "open_vsplit",
                     ["t"] = "open_tabnew",
-                    -- ["d"] = "buffer_delete",
+                    ["a"] = "add",
+                    ["A"] = "add_directory"
                 },
             },
         })
