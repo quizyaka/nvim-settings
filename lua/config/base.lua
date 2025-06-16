@@ -11,7 +11,9 @@ vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.o.hidden = true
 
-
+vim.opt.clipboard = "unnamedplus"
+vim.keymap.set({ "n", "v" }, "<C-c>", '"+y', { desc = "Копировать в системный буфер" })
+vim.keymap.set({ "n", "v" }, "<C-v>", '"+p', { desc = "Вставить из системного буфера" })
 -- Indent
 
 vim.opt.expandtab = true
