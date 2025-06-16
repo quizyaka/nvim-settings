@@ -23,11 +23,8 @@ return {
 
         map("n", "<Tab>", "<cmd>BufferLineCycleNext<CR>", { desc = "Next buffer" })
         map("n", "<S-Tab>", "<cmd>BufferLineCyclePrev<CR>", { desc = "Previous buffer" })
-        map("n", "<leader>bd", "<cmd>bd<CR>", { desc = "Delete current buffer" })
+        map("n", "<leader>x", "<cmd>BufferLinePickClose<CR>", { desc = "Close buffer" })
         map("n", "<leader>bo", "<cmd>BufferLineCloseOthers<CR>", { desc = "Close other buffers" })
-        map("n", "<leader>bp", "<cmd>BufferLinePick<CR>", { desc = "Pick buffer" })
-        map("n", "<leader>bn", "<cmd>BufferLineMoveNext<CR>", { desc = "Move buffer right" })
-        map("n", "<leader>bm", "<cmd>BufferLineMovePrev<CR>", { desc = "Move buffer left" })
     end,
 }
 -- return {}

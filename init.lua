@@ -8,3 +8,5 @@ require('config.prettier')
 
 require('config.treesitter')
 require('config.transparent')
+
+require('config.lualines')
