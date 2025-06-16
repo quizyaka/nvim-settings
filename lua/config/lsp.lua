@@ -51,3 +51,21 @@ lspconfig.emmet_language_server.setup({
         },
     }
 })
+
+lspconfig.rust_analyzer.setup({
+    cmd = { "/home/quizyaka/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rust-analyzer" },
+    settings = {
+        ["rust-analyzer"] = {
+            diagnostics = {
+                enable = true,
+                experimental = { enable = true },
+            },
+            cargo = {
+                allFeatures = true,
+            },
+            checkOnSave = {
+                command = "clippy", -- включает диагностику через Clippy
+            },
+        }
+    }
+})

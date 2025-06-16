@@ -34,3 +34,19 @@ vim.api.nvim_create_autocmd("BufEnter", {
         end
     end
 })
+
+vim.diagnostic.config({
+    virtual_text = true, -- ⬅ текст ошибок прямо в коде (справа от строки)
+    signs = true,        -- ⬅ значки в колонке слева (например, ✖)
+    underline = true,    -- ⬅ подчёркивание ошибочной строки
+    update_in_insert = false,
+    severity_sort = true,
+})
+
+-- vim.keymap.set("n", "<leader>rr", ":terminal cargo run<CR>", {
+--     desc = "[R]un [R]ust project"
+-- })
+--
+-- vim.keymap.set("n", "<leader>rt", ":terminal cargo test<CR>", {
+--     desc = "[R]un [T]ests"
+-- })
