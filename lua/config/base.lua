@@ -29,6 +29,7 @@ vim.api.nvim_create_autocmd("BufEnter", {
         local f = vim.fn.expand('%:p')
         if vim.fn.isdirectory(f) ~= 0 then
             vim.cmd('Neotree toggle')
+            -- vim.cmd('Neotree float')
             vim.api.nvim_clear_autocmds { group = 'NeoTreeInit' }
         end
     end
