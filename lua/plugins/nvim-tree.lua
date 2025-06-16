@@ -21,6 +21,13 @@ return {
                     follow_current_file = { enabled = true },
                 },
             },
+            filesystem = {
+                filtered_items = {
+                    visible = true,
+                    --hide_dotfiles = false,
+                    --hide_gitignored = false,
+                },
+            },
             window = {
                 mappings = {
                     ["<leader>]"] = "set_root",
